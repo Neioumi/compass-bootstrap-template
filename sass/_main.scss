@@ -1,0 +1,179 @@
+/*
+
+* Custom Plugins
+** Customize Bootstrap style
+
+* Page Style
+** common parts
+** button
+** icon
+
+** Top Page
+** Sub Page
+
+*/
+
+/*
+
+Sample ========================
+%custom_btn_style {
+  @extend %sprite_setting;
+  width: 28px;
+  height: 28px;
+}
+
+.btn_top {
+  @extend %custom_btn_style;
+  background-position: -60px 0;
+  @include box_shadow(1px 1px 2px 0 #BFBFBF);
+  &:hover {
+    background-position: -90px 0;
+  }
+}
+
+// navbar name list
+$navNameList: A, B, C;
+// width list
+$navSizeList: 68, 92, 96;
+
+// making class for each name in navNameList
+// add triangle when nav is current except phone size
+@for $i from 1 through length($navNameList) {
+  $nav_name: nth($navNameList, $i);
+  $nav_size: index($navNameList, $nav_name);
+  $i: $i - 1;
+  .nav_#{$nav_name} {
+  }
+}
+
+*/
+
+/* Custom Plugins
+=============================================================== */
+
+/* Customize Bootstrap style ========================== */
+
+
+/* Page Style
+=============================================================== */
+/* common parts */
+
+// a {
+//   font-weight: bold;
+//   text-decoration: underline;
+//   &.btn {
+//     text-decoration: none;
+//   }
+// }
+
+h1 {
+  display: block;
+  position: relative;
+  margin: 0 0 $margin_default;
+  padding: 0;
+  font-size: 24px;
+  font-weight: bold;
+  color: $mainColor;
+}
+
+h2 {
+  display: block;
+  margin: 0 0 $margin_default;
+  padding: 0;
+  font-size: 20px;
+}
+
+h3 {
+  display: block;
+  margin: 0 0 $margin_narrow;
+  padding: 0;
+  font-size: 20px;
+}
+
+h4 {
+  display: block;
+  margin: 0 0 ($margin_narrow / 2);
+  padding: 0;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+small {
+  font-size: 80%;
+  line-height: 1.1;
+  display: inline-block;
+}
+
+// ul { padding-left: 0; }
+ol { padding-left: 20px; }
+
+/* column */
+%column_style {
+  padding: 18px;
+  @include border_radius($radius_size_m);
+}
+
+.column_def {
+  background-color: $blockBgColor;
+  @extend %column_style;
+}
+
+/* button */
+
+
+/* icon */
+
+
+/* Top Page ========================== */
+/* header */
+#header {
+}
+
+.header_logo {
+}
+
+
+/* footer */
+#footer {
+  padding-top: $margin_default;
+}
+
+#footer_link {
+  display: block;
+  padding-bottom: $margin_narrow;
+  font-size: 85%;
+  li {
+    display: inline-block;
+    margin-right: 1em;
+    padding: 0 8px 5px;
+    list-style: none;
+    a {
+      display: inline-block;
+      padding: 4px;
+      font-weight: normal;
+      &:link {
+        text-decoration: none;
+      }
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.footer_logo {
+}
+.copyright {
+  display: block;
+  margin-bottom: $margin_default;
+  text-align: center;
+  color: #999;
+  font-size: 85%;
+}
+
+/* main */
+#main {
+  background-color: #FFF;
+}
+
+/* Sub Page ========================== */

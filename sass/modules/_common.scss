@@ -1,0 +1,68 @@
+/* Float */
+.left { float: left; }
+.right { float: right; }
+.clear { clear: both; }
+
+/* Margin */
+$margin_narrow: 15px;
+$margin_default: 20px;
+$margin_wide: 30px;
+
+.mt_1l { margin-top: 10px; }
+.mt_2l { margin-top: 20px; }
+.mt_3l { margin-top: 30px; }
+
+.mb_1l { margin-bottom: 10px; }
+.mb_2l { margin-bottom: 20px; }
+.mb_3l { margin-bottom: 30px; }
+
+.ml_1l { margin-left: 10px; }
+.ml_2l { margin-left: 20px; }
+.ml_3l { margin-left: 30px; }
+
+.ml_m1l { margin-left: -10px; }
+.ml_m2l { margin-left: -20px; }
+.ml_m3l { margin-left: -30px; }
+
+
+/* Padding */
+.pt_1l { padding-top: 10px; }
+.pt_2l { padding-top: 20px; }
+.pt_3l { padding-top: 30px; }
+
+.pb_1l { padding-bottom: 10px; }
+.pb_2l { padding-bottom: 20px; }
+.pb_3l { padding-bottom: 30px; }
+
+.pl_1l { padding-left: 10px; }
+.pl_2l { padding-left: 20px; }
+.pl_3l { padding-left: 30px; }
+
+/* Vertical Align */
+.va_t { vertical-align: top; }
+.va_m { vertical-align: middle; }
+.va_b { vertical-align: bottom; }
+
+
+// Radius Size
+$radius_size_xs: 2px;
+$radius_size_s: 4px;
+$radius_size_m: 6px;
+$radius_size_l: 8px;
+$radius_size_ll: 10px;
+
+article, section {
+  display: block;
+  margin-bottom: $margin_default;
+}
+
+/* sprite */
+$spriteimg: url(../img/sprite.png);
+
+%sprite_setting {
+  display: inline-block;
+  background-image: $spriteimg;
+  background-repeat: no-repeat;
+  border: 0;
+  text-indent: -9999px;
+}
